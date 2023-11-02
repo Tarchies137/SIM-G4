@@ -1,0 +1,4 @@
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/WCD/build/CMakeFiles/sim.dir
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/WCD/build/CMakeFiles/Simulation.dir
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/WCD/build/CMakeFiles/edit_cache.dir
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/WCD/build/CMakeFiles/rebuild_cache.dir
