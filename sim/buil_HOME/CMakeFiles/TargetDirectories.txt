@@ -1,0 +1,4 @@
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles/sim.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles/Simulation.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles/edit_cache.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles/rebuild_cache.dir
