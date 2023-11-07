@@ -629,6 +629,12 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Pow.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/detector.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VReadOutGeometry.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4SensitiveVolumeList.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4CollectionNameVector.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSDFilter.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/physics.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VPhysicsConstructor.hh \
