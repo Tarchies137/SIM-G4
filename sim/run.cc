@@ -12,7 +12,7 @@ void MyRunAction::BeginOfRunAction(const G4Run*)
 
 	man->OpenFile("output.root");
 
-	man->CreateNtuple("Hist","Hits");
+	man->CreateNtuple("Hits", "Hits");
 	man->CreateNtupleIColumn("fEvent");
 	man->CreateNtupleIColumn("fX");
 	man->CreateNtupleIColumn("fY");
@@ -26,4 +26,4 @@ void MyRunAction::EndOfRunAction(const G4Run*)
 
 	man->Write();
 	man->CloseFile();
-}
+} 
