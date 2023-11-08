@@ -2,8 +2,9 @@
 #define RUN_HH
 
 #include "G4UserRunAction.hh"
+#include "G4Run.hh"
 
-#include "G4AnalysisManager.hh"
+#include "G4AnalysisManager.hh"//"g4root.hh"
 
 class MyRunAction : public G4UserRunAction
 {

@@ -274,6 +274,14 @@ CMakeFiles/sim.dir/action.cc.o: \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.icc \
  /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/run.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Run.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Profiler.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Profiler.icc \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Globals.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Types.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Utility.hh \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManager.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericAnalysisManager.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
