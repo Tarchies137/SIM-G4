@@ -771,4 +771,5 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VPrimaryGenerator.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.hh \
  /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/run.hh \
- /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Run.hh
