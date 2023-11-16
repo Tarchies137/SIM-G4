@@ -813,6 +813,15 @@ CMakeFiles/sim.dir/construction.cc.o: ../construction.cc \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Pow.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericMessenger.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UImessenger.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIdirectory.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIcommand.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIparameter.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UItokenNum.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ApplicationState.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyType.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyMethod.hh \
   ../detector.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VHit.hh \
@@ -995,12 +1004,6 @@ CMakeFiles/sim.dir/construction.cc.o: ../construction.cc \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSteppingVerbose.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/trkgdefs.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TrackingMessenger.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UImessenger.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIdirectory.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIcommand.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIparameter.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UItokenNum.hh \
-  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ApplicationState.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserTrackingAction.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4RunManagerKernel.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManager.hh \
@@ -3502,6 +3505,9 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Pow.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericMessenger.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyType.hh \
+  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyMethod.hh \
   ../detector.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
   /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VReadOutGeometry.hh \
@@ -3701,8 +3707,6 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SurfBits.hh:
 
-/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4PolyhedraHistorical.hh:
-
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Polycone.icc:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4PolyconeHistorical.hh:
@@ -3816,8 +3820,6 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -4044,6 +4046,8 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TrajectoryContainer.hh:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VDigiCollection.hh:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Event.hh:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
@@ -4281,6 +4285,10 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleDefinition.icc:
 
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4HepRepFileXMLWriter.hh:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VVisManager.hh:
@@ -4459,10 +4467,6 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /usr/include/c++/11/bits/std_function.h:
 
-/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Polycone.hh:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Voxelizer.icc:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VAnalysisManager.icc:
@@ -4511,8 +4515,6 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Event.hh:
-
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
 
 /usr/include/c++/11/bits/stl_pair.h:
@@ -4546,6 +4548,10 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4PolyhedraHistorical.hh:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyMethod.hh:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -4822,6 +4828,12 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VGraphicsSystem.hh:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Polycone.hh:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericMessenger.hh:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -5117,6 +5129,10 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/axis:
 
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/rundefs.hh:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/axes:
+
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4StackedTrack.hh:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h2d:
@@ -5245,10 +5261,6 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4DensityEffectCalculator.hh:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/c++/11/bits/list.tcc:
-
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4PhysicsFreeVector.hh:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Log.hh:
@@ -5266,6 +5278,10 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4NistElementBuilder.hh:
 
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyType.hh:
 
 /usr/include/c++/11/utility:
 
@@ -5336,7 +5352,3 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
 /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4RunManager.hh:
 
 /usr/include/c++/11/list:
-
-/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/axes:
-
-/home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/rundefs.hh:
