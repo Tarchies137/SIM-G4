@@ -629,6 +629,9 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Pow.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericMessenger.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyType.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnyMethod.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/detector.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VReadOutGeometry.hh \
@@ -771,4 +774,5 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VPrimaryGenerator.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/run.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Run.hh

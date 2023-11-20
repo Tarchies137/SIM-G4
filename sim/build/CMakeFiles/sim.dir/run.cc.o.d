@@ -177,12 +177,11 @@ CMakeFiles/sim.dir/run.cc.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/tls.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManager.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericAnalysisManager.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VAnalysisManager.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManagerState.hh \
- /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Run.hh \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/globals.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ios.hh \
  /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
@@ -204,11 +203,7 @@ CMakeFiles/sim.dir/run.cc.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4String.hh \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
@@ -241,6 +236,19 @@ CMakeFiles/sim.dir/run.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Profiler.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Profiler.icc \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Globals.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Types.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/PTL/Utility.hh \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/cstddef \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManager.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisVerbose.hh \
  /home/usuario/fabian/SIMULADORES/Geant4/geant4-v11.1.2-install/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/condition_variable \
  /usr/include/c++/11/bits/shared_ptr.h \
