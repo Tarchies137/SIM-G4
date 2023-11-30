@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim
+CMAKE_SOURCE_DIR = /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build
+CMAKE_BINARY_DIR = /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/sim.dir/all
+all: CMakeFiles/wcd.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,61 +71,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/sim.dir/clean
-clean: CMakeFiles/Simulation.dir/clean
+clean: CMakeFiles/wcd.dir/clean
+clean: CMakeFiles/Estanque.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sim.dir
+# Target rules for target CMakeFiles/wcd.dir
 
 # All Build rule for target.
-CMakeFiles/sim.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target sim"
-.PHONY : CMakeFiles/sim.dir/all
+CMakeFiles/wcd.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target wcd"
+.PHONY : CMakeFiles/wcd.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles 0
-.PHONY : CMakeFiles/sim.dir/rule
+CMakeFiles/wcd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wcd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles 0
+.PHONY : CMakeFiles/wcd.dir/rule
 
 # Convenience name for target.
-sim: CMakeFiles/sim.dir/rule
-.PHONY : sim
+wcd: CMakeFiles/wcd.dir/rule
+.PHONY : wcd
 
 # clean rule for target.
-CMakeFiles/sim.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/clean
-.PHONY : CMakeFiles/sim.dir/clean
+CMakeFiles/wcd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/clean
+.PHONY : CMakeFiles/wcd.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Simulation.dir
+# Target rules for target CMakeFiles/Estanque.dir
 
 # All Build rule for target.
-CMakeFiles/Simulation.dir/all: CMakeFiles/sim.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles --progress-num= "Built target Simulation"
-.PHONY : CMakeFiles/Simulation.dir/all
+CMakeFiles/Estanque.dir/all: CMakeFiles/wcd.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Estanque.dir/build.make CMakeFiles/Estanque.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Estanque.dir/build.make CMakeFiles/Estanque.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles --progress-num= "Built target Estanque"
+.PHONY : CMakeFiles/Estanque.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Simulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Simulation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/sim/build/CMakeFiles 0
-.PHONY : CMakeFiles/Simulation.dir/rule
+CMakeFiles/Estanque.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Estanque.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/wcd_tank/build/CMakeFiles 0
+.PHONY : CMakeFiles/Estanque.dir/rule
 
 # Convenience name for target.
-Simulation: CMakeFiles/Simulation.dir/rule
-.PHONY : Simulation
+Estanque: CMakeFiles/Estanque.dir/rule
+.PHONY : Estanque
 
 # clean rule for target.
-CMakeFiles/Simulation.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/clean
-.PHONY : CMakeFiles/Simulation.dir/clean
+CMakeFiles/Estanque.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Estanque.dir/build.make CMakeFiles/Estanque.dir/clean
+.PHONY : CMakeFiles/Estanque.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

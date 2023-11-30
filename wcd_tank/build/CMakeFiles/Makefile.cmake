@@ -115,6 +115,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sim.dir/DependInfo.cmake"
-  "CMakeFiles/Simulation.dir/DependInfo.cmake"
+  "CMakeFiles/wcd.dir/DependInfo.cmake"
+  "CMakeFiles/Estanque.dir/DependInfo.cmake"
   )

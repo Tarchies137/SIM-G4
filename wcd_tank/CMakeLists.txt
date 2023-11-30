@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 
-project(Simulation)
+project(Estanque)
 
 find_package(Geant4 REQUIRED ui_all vis_all)
 
@@ -9,7 +9,7 @@ include(${Geant4_USE_FILE})
 file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cc)
 file(GLOB headers ${PROJECT_SOURCE_DIR}/*.hh)
 
-add_executable(sim sim.cc ${sources} ${headers})
-target_link_libraries(sim ${Geant4_LIBRARIES})
+add_executable(wcd wcd.cc ${sources} ${headers})
+target_link_libraries(wcd ${Geant4_LIBRARIES})
 
-add_custom_target(Simulation DEPENDS sim)
+add_custom_target(Estanque DEPENDS wcd)

@@ -1,0 +1,3 @@
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/Nist/build/CMakeFiles/MyGeant4Executable.dir
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/Nist/build/CMakeFiles/edit_cache.dir
+/home/usuario/fabian/SIMULADORES/Geant4/SIM-G4/Nist/build/CMakeFiles/rebuild_cache.dir
