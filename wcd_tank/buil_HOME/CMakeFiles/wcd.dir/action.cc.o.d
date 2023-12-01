@@ -1,7 +1,9 @@
-CMakeFiles/sim.dir/generator.cc.o: \
- /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/generator.cc \
+CMakeFiles/wcd.dir/action.cc.o: \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/action.cc \
  /usr/include/stdc-predef.h \
- /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/generator.hh \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/action.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VUserActionInitialization.hh \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/generator.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleGun.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/globals.hh \
@@ -269,4 +271,81 @@ CMakeFiles/sim.dir/generator.cc.o: \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTableIterator.hh \
- /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.icc
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.icc \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/run.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisVerbose.hh \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4HnInformation.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4AnalysisUtilities.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4BinScheme.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Fcn.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VAnalysisManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4HnManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/ntuple_booking \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/cids \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/cid \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/typedefs \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/forit \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VNtupleManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VFileManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4BaseFileManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VTHnFileManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnMessenger.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UImessenger.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIdirectory.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIcommand.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UIparameter.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UItokenNum.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ApplicationState.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnToolsManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4THnMessenger.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Tokenizer.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h1d \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h1 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/b1 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/base_histo \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/histo_data \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/axes \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/axis \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/eqT \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h2d \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h2 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/b2 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h3d \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/h3 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/b3 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/p1d \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/p1 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/profile_data \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/p2d \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/tools/histo/p2 \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericFileManager.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GenericFileManager.icc

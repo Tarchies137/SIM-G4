@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim
+CMAKE_SOURCE_DIR = /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME
+CMAKE_BINARY_DIR = /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/buil_HOME/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,37 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sim
+# Target rules for targets named wcd
 
 # Build rule for target.
-sim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim
-.PHONY : sim
+wcd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wcd
+.PHONY : wcd
 
 # fast build rule for target.
-sim/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/build
-.PHONY : sim/fast
+wcd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/build
+.PHONY : wcd/fast
 
 #=============================================================================
-# Target rules for targets named Simulation
+# Target rules for targets named Estanque
 
 # Build rule for target.
-Simulation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Simulation
-.PHONY : Simulation
+Estanque: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Estanque
+.PHONY : Estanque
 
 # fast build rule for target.
-Simulation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
-.PHONY : Simulation/fast
+Estanque/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Estanque.dir/build.make CMakeFiles/Estanque.dir/build
+.PHONY : Estanque/fast
 
 action.o: action.cc.o
 .PHONY : action.o
 
 # target to build an object file
 action.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/action.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/action.cc.o
 .PHONY : action.cc.o
 
 action.i: action.cc.i
@@ -155,7 +155,7 @@ action.i: action.cc.i
 
 # target to preprocess a source file
 action.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/action.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/action.cc.i
 .PHONY : action.cc.i
 
 action.s: action.cc.s
@@ -163,7 +163,7 @@ action.s: action.cc.s
 
 # target to generate assembly for a file
 action.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/action.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/action.cc.s
 .PHONY : action.cc.s
 
 construction.o: construction.cc.o
@@ -171,7 +171,7 @@ construction.o: construction.cc.o
 
 # target to build an object file
 construction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/construction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/construction.cc.o
 .PHONY : construction.cc.o
 
 construction.i: construction.cc.i
@@ -179,7 +179,7 @@ construction.i: construction.cc.i
 
 # target to preprocess a source file
 construction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/construction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/construction.cc.i
 .PHONY : construction.cc.i
 
 construction.s: construction.cc.s
@@ -187,15 +187,39 @@ construction.s: construction.cc.s
 
 # target to generate assembly for a file
 construction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/construction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/construction.cc.s
 .PHONY : construction.cc.s
+
+detector.o: detector.cc.o
+.PHONY : detector.o
+
+# target to build an object file
+detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.o
+.PHONY : detector.cc.o
+
+detector.i: detector.cc.i
+.PHONY : detector.i
+
+# target to preprocess a source file
+detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.i
+.PHONY : detector.cc.i
+
+detector.s: detector.cc.s
+.PHONY : detector.s
+
+# target to generate assembly for a file
+detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.s
+.PHONY : detector.cc.s
 
 generator.o: generator.cc.o
 .PHONY : generator.o
 
 # target to build an object file
 generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/generator.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/generator.cc.o
 .PHONY : generator.cc.o
 
 generator.i: generator.cc.i
@@ -203,7 +227,7 @@ generator.i: generator.cc.i
 
 # target to preprocess a source file
 generator.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/generator.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/generator.cc.i
 .PHONY : generator.cc.i
 
 generator.s: generator.cc.s
@@ -211,7 +235,7 @@ generator.s: generator.cc.s
 
 # target to generate assembly for a file
 generator.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/generator.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/generator.cc.s
 .PHONY : generator.cc.s
 
 physics.o: physics.cc.o
@@ -219,7 +243,7 @@ physics.o: physics.cc.o
 
 # target to build an object file
 physics.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/physics.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/physics.cc.o
 .PHONY : physics.cc.o
 
 physics.i: physics.cc.i
@@ -227,7 +251,7 @@ physics.i: physics.cc.i
 
 # target to preprocess a source file
 physics.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/physics.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/physics.cc.i
 .PHONY : physics.cc.i
 
 physics.s: physics.cc.s
@@ -235,32 +259,56 @@ physics.s: physics.cc.s
 
 # target to generate assembly for a file
 physics.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/physics.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/physics.cc.s
 .PHONY : physics.cc.s
 
-sim.o: sim.cc.o
-.PHONY : sim.o
+run.o: run.cc.o
+.PHONY : run.o
 
 # target to build an object file
-sim.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/sim.cc.o
-.PHONY : sim.cc.o
+run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/run.cc.o
+.PHONY : run.cc.o
 
-sim.i: sim.cc.i
-.PHONY : sim.i
+run.i: run.cc.i
+.PHONY : run.i
 
 # target to preprocess a source file
-sim.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/sim.cc.i
-.PHONY : sim.cc.i
+run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/run.cc.i
+.PHONY : run.cc.i
 
-sim.s: sim.cc.s
-.PHONY : sim.s
+run.s: run.cc.s
+.PHONY : run.s
 
 # target to generate assembly for a file
-sim.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/sim.cc.s
-.PHONY : sim.cc.s
+run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/run.cc.s
+.PHONY : run.cc.s
+
+wcd.o: wcd.cc.o
+.PHONY : wcd.o
+
+# target to build an object file
+wcd.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/wcd.cc.o
+.PHONY : wcd.cc.o
+
+wcd.i: wcd.cc.i
+.PHONY : wcd.i
+
+# target to preprocess a source file
+wcd.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/wcd.cc.i
+.PHONY : wcd.cc.i
+
+wcd.s: wcd.cc.s
+.PHONY : wcd.s
+
+# target to generate assembly for a file
+wcd.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/wcd.cc.s
+.PHONY : wcd.cc.s
 
 # Help Target
 help:
@@ -270,23 +318,29 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Simulation"
-	@echo "... sim"
+	@echo "... Estanque"
+	@echo "... wcd"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
+	@echo "... detector.o"
+	@echo "... detector.i"
+	@echo "... detector.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"
-	@echo "... sim.o"
-	@echo "... sim.i"
-	@echo "... sim.s"
+	@echo "... run.o"
+	@echo "... run.i"
+	@echo "... run.s"
+	@echo "... wcd.o"
+	@echo "... wcd.i"
+	@echo "... wcd.s"
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
-CMakeFiles/sim.dir/physics.cc.o: \
- /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/physics.cc \
+CMakeFiles/wcd.dir/physics.cc.o: \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/physics.cc \
  /usr/include/stdc-predef.h \
- /home/fabian/fabian/Simuladores/Geant4/SIM-G4/sim/physics.hh \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/physics.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VModularPhysicsList.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
