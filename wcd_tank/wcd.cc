@@ -33,7 +33,7 @@ int main(int argc, char ** argv)
     UImanager->ApplyCommand("vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
-    UImanager->ApplyCommand("/run/beamOn 1");
+    //UImanager->ApplyCommand("/run/beamOn 1");
     ui->SessionStart();
 
    

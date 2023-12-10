@@ -79,10 +79,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 //-----------------------------------------------------------------------
 //						VOLUMENES
 //-----------------------------------------------------------------------
-//  -Habitacion: Caja de 5mx5mx5m con aire se incluye en la simulación 
+//  -Habitacion: Caja de 3mx3mx3m con aire se incluye en la simulación 
 // para considerar las partículas entrando desde fuera del estanque	
 
-	G4Box *solidWorld 				= new G4Box("solidWorld", 5*m, 5*m, 5*m);
+	G4Box *solidWorld 				= new G4Box("solidWorld", 3*m, 3*m, 3*m);
 	G4LogicalVolume *logicWorld 	= new G4LogicalVolume(solidWorld,worldMat,"logicWorld");
 	G4VPhysicalVolume *physWorld	= new G4PVPlacement(
 		0, 
@@ -97,7 +97,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 //  -Estanque: Estanque de 1.2m de diámetro y 1.2m de altura. contiene Agua 
 
 	G4Tubs *solidRadiator = new G4Tubs("solidRadiator", 0., 1.2*m, 1.2*m, 0., 2 * pi);
-	G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator,tankMat, "logicalRadiator");
+	G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator,worldMat, "logicalRadiator");//material worldmat para reducir el procesamiento, cambiar a tankmat
 	G4RotationMatrix* rotation = new G4RotationMatrix();
 	rotation->rotateX(90. * degree); 			//Se rota para visualizarlo vetical
 	G4VPhysicalVolume *physRadiator = new G4PVPlacement(
@@ -110,7 +110,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 		0, 
 		true);
 //------------------------------------------------------------------------------------------
-// -Capa de Tyvek
+// -Capa de Tyvek 
 	G4Tubs *solidTyvek = new G4Tubs("solidTyvek", 1.2*m, 1.2*m+0.01*mm, 1.2*m, 0., 2 * pi);
 	G4LogicalVolume *logicTyvek = new G4LogicalVolume(solidTyvek,Tyvek, "logicalTyvek");
 	//G4RotationMatrix* rotation = new G4RotationMatrix();
@@ -134,9 +134,15 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 
 //----------------------------------------------------------------------------------------	
-	G4Box *solidDetector = new G4Box("solidDetector", 0.005*m, 0.005*m, 0.01*m);
+	G4Box *solidDetector = new G4Box("solidDetector", 0.3*m, 0.3*m, 0.1*m);
 
 	logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
+
+	G4VPhysicalVolume *physDetector = new 
+	G4PVPlacement(rotation, //se aplica misma rotacion que el estanque 
+		G4ThreeVector(0,1.2*m,0), logicDetector,"physDetector",logicWorld, false, 0, true);
+		//
+	//
 
 	//for(G4int i=0;i<100;i++)
 	///{
@@ -145,7 +151,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 		//	G4VPhysicalVolume *physDetector = new G4PVPlacement(0, G4ThreeVector(-0.5*m+(i+0.5)*m/100,-0.5*m+(j+0.5)*m/100,0.49*m), logicDetector,"physDetector",logicWorld, false, j+i*100, true);
 		//}
 	//}
-
+//-----------------------------------------------------------------------------------------
 	return physWorld;
 }
 
