@@ -18,8 +18,8 @@ void MyRunAction::BeginOfRunAction(const G4Run*)
 	man->CreateNtupleDColumn("fX");
 	man->CreateNtupleDColumn("fY");
 	man->CreateNtupleDColumn("fZ");
-	man->CreateNtupleIColumn("NumPhotons");       // Nueva columna para contar fotones
-    man->CreateNtupleDColumn("PhotonEnergy");    // Nueva columna para la energía de los fotones
+	//man->CreateNtupleIColumn("NumPhotons");       // Nueva columna para contar fotones
+    	//man->CreateNtupleDColumn("PhotonEnergy");    // Nueva columna para la energía de los fotones
 	man->FinishNtuple(0); 
 }
 

@@ -97,7 +97,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 //  -Estanque: Estanque de 1.2m de diámetro y 1.2m de altura. contiene Agua 
 
 	G4Tubs *solidRadiator = new G4Tubs("solidRadiator", 0., 1.2*m, 1.2*m, 0., 2 * pi);
-	G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator,worldMat, "logicalRadiator");//material worldmat para reducir el procesamiento, cambiar a tankmat
+	G4LogicalVolume *logicRadiator = new G4LogicalVolume(solidRadiator,tankMat, "logicalRadiator");//material worldmat para reducir el procesamiento, cambiar a tankmat
 	G4RotationMatrix* rotation = new G4RotationMatrix();
 	rotation->rotateX(90. * degree); 			//Se rota para visualizarlo vetical
 	G4VPhysicalVolume *physRadiator = new G4PVPlacement(
