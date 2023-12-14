@@ -15,7 +15,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
 //-----------------------------------------------
 //-------Definiendo partícula (muón)
 	G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
-	G4String particleName = "mu+";
+	G4String particleName = "mu-";
 	G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
 //-----------------------------------------------
 // DEfiniedo parámetros de lazamiento

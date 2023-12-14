@@ -344,6 +344,14 @@ CMakeFiles/wcd.dir/construction.cc.o: \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Pow.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Exp.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4OpticalSurface.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Physics2DVector.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4Physics2DVector.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SurfaceProperty.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4LogicalBorderSurface.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4LogicalSurface.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4LogicalSurface.icc \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4LogicalBorderSurface.icc \
  /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/detector.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VHit.hh \

@@ -59,16 +59,16 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 	worldMat->SetMaterialPropertiesTable(mptWorld);
 //---------------------------------------------------------------------
-//  -Estanque
+//  -MAterial interno del Estanque: Agua
 
 	G4Material *tankMat = nist->FindOrBuildMaterial("G4_WATER");
 
    G4MaterialPropertiesTable* waterMPT = tankMat->GetMaterialPropertiesTable();
 
-//	G4MaterialPropertiesTable *mptTank = new G4MaterialPropertiesTable();
-//	mptTank->AddProperty("RINDEX",energy, rindexTank, 2);
-//	tankMat->SetMaterialPropertiesTable(mptTank);
-
+	/*G4MaterialPropertiesTable *mptTank = new G4MaterialPropertiesTable();
+	mptTank->AddProperty("RINDEX",energy, rindexTank, 2);
+	tankMat->SetMaterialPropertiesTable(mptTank);
+*/
 //----------------------------------------------------------------------
 //  -Tyvek
 	G4Material* Tyvek = new G4Material("Tyvek", 0.94 * g / cm3, 2);
@@ -111,8 +111,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 		true);
 //------------------------------------------------------------------------------------------
 // -Capa de Tyvek 
-	G4Tubs *solidTyvek = new G4Tubs("solidTyvek", 1.2*m, 1.2*m+0.01*mm, 1.2*m, 0., 2 * pi);
-	G4LogicalVolume *logicTyvek = new G4LogicalVolume(solidTyvek,Tyvek, "logicalTyvek");
+/*	G4Tubs *solidTyvek = new G4Tubs("solidTyvek", 1.2*m, 1.2*m+0.01*mm, 1.2*m, 0., 2 * pi);
+	G4LogicalVolume *logicTyvek = 
+	new G4LogicalVolume(solidTyvek,
+						Tyvek, 
+						"logicalTyvek");
 	//G4RotationMatrix* rotation = new G4RotationMatrix();
 	//rotation->rotateX(90. * degree); 			
 	G4VPhysicalVolume *physTyvek = new G4PVPlacement(
@@ -127,11 +130,35 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 // Crear el sólido para la superficie reflectora 
 
 	// Asociar una superficie óptica reflectante a la capa de Tyvek
-//G4OpticalSurface* tyvekSurface = new G4OpticalSurface("TyvekSurface");
-//tyvekSurface->SetType(dielectric_metal);
-//tyvekSurface->SetFinish(polished);
-//tyvekSurface->SetModel(glisur);
+/* G4OpticalSurface* tyvekSurface = new G4OpticalSurface("TyvekSurface");
+tyvekSurface->SetType(dielectric_metal);
+tyvekSurface->SetFinish(polished);
+tyvekSurface->SetModel(glisur);
 
+*/
+
+
+//--------------------------------------------------------------------
+//  SUPERFICIE REFLECTORA
+
+// Crear la superficie óptica para las caras internas del tanque
+G4OpticalSurface* opticalSurface = new G4OpticalSurface("OpticalSurfaceInternal");
+opticalSurface->SetType(dielectric_dielectric);				// superficie mate
+opticalSurface->SetFinish(groundbackpainted); 	// mate pintada por detras
+opticalSurface->SetModel(unified);				//modelo reflección difusa
+
+// Crear la relación de reflexiy transmisión
+G4double reflectividad  = 0.9; // Ajusta esto según tus necesidades
+G4double eficiencia = 0.1;  // Ajusta esto según tus necesidades
+G4MaterialPropertiesTable* surfaceProperties = new G4MaterialPropertiesTable();
+surfaceProperties->AddProperty("REFLECTIVITY", {1.239841939*eV/0.9, 1.239841939*eV/0.2}, {reflectividad, reflectividad});
+surfaceProperties->AddProperty("EFFICIENCY", {1.239841939*eV/0.9, 1.239841939*eV/0.2}, {eficiencia, eficiencia});
+
+// Asignar las propiedades a la superficie óptica
+opticalSurface->SetMaterialPropertiesTable(surfaceProperties);
+
+// Crear la interfaz entre el material del tubo y el material tankMat
+new G4LogicalBorderSurface("OpticalSurfaceInternal", physRadiator, physRadiator, opticalSurface);
 
 //----------------------------------------------------------------------------------------	
 	G4Box *solidDetector = new G4Box("solidDetector", 0.3*m, 0.3*m, 0.1*m);
