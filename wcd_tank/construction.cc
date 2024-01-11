@@ -16,9 +16,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2};
 	G4double rindexAerogel[2] = {1.1,1.1};
 	G4double rindexWorld[2] = {1.0, 1.0};
-	G4double rindexTank[2] = {1.33, 1.33};
-
-
+	G4double rindexTank[2] = {1.33, 1.36};
+	G4double absorptionCoefficient[2] = {3.4*m, 1.4*m }; 
 	G4double pi  = 3.14159265358979323846;
 
 
@@ -54,8 +53,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 
 	G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
-	mptWorld ->AddProperty("RINDEX", {1.239841939*eV/0.9}, {1.0}, 1);
-	//mptWorld->AddProperty("RINDEX",energy, rindexWorld, 2);
+	//mptWorld ->AddProperty("RINDEX", {1.239841939*eV/0.9}, {1.0}, 1);
+	mptWorld->AddProperty("RINDEX",energy, rindexWorld, 2);
 
 	worldMat->SetMaterialPropertiesTable(mptWorld);
 //---------------------------------------------------------------------
@@ -65,10 +64,12 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
    G4MaterialPropertiesTable* waterMPT = tankMat->GetMaterialPropertiesTable();
 
-	/*G4MaterialPropertiesTable *mptTank = new G4MaterialPropertiesTable();
+	G4MaterialPropertiesTable *mptTank = new G4MaterialPropertiesTable();
 	mptTank->AddProperty("RINDEX",energy, rindexTank, 2);
 	tankMat->SetMaterialPropertiesTable(mptTank);
-*/
+	mptTank->AddProperty("ABSLENGTH", energy, absorptionCoefficient, 2);
+	tankMat->SetMaterialPropertiesTable(mptTank);
+
 //----------------------------------------------------------------------
 //  -Tyvek
 	G4Material* Tyvek = new G4Material("Tyvek", 0.94 * g / cm3, 2);
@@ -144,12 +145,12 @@ tyvekSurface->SetModel(glisur);
 // Crear la superficie óptica para las caras internas del tanque
 G4OpticalSurface* opticalSurface = new G4OpticalSurface("OpticalSurfaceInternal");
 opticalSurface->SetType(dielectric_dielectric);				// superficie mate
-opticalSurface->SetFinish(groundbackpainted); 	// mate pintada por detras
+opticalSurface->SetFinish(ground); 	// mate pintada por detras
 opticalSurface->SetModel(unified);				//modelo reflección difusa
 
 // Crear la relación de reflexiy transmisión
-G4double reflectividad  = 0.9; // Ajusta esto según tus necesidades
-G4double eficiencia = 0.1;  // Ajusta esto según tus necesidades
+G4double reflectividad  = 0.8; // 
+G4double eficiencia = 0.9;  // 
 G4MaterialPropertiesTable* surfaceProperties = new G4MaterialPropertiesTable();
 surfaceProperties->AddProperty("REFLECTIVITY", {1.239841939*eV/0.9, 1.239841939*eV/0.2}, {reflectividad, reflectividad});
 surfaceProperties->AddProperty("EFFICIENCY", {1.239841939*eV/0.9, 1.239841939*eV/0.2}, {eficiencia, eficiencia});
@@ -158,16 +159,16 @@ surfaceProperties->AddProperty("EFFICIENCY", {1.239841939*eV/0.9, 1.239841939*eV
 opticalSurface->SetMaterialPropertiesTable(surfaceProperties);
 
 // Crear la interfaz entre el material del tubo y el material tankMat
-new G4LogicalBorderSurface("OpticalSurfaceInternal", physRadiator, physRadiator, opticalSurface);
+new G4LogicalBorderSurface("OpticalSurfaceInternal", physRadiator, physWorld, opticalSurface);
 
 //----------------------------------------------------------------------------------------	
-	G4Box *solidDetector = new G4Box("solidDetector", 0.3*m, 0.3*m, 0.1*m);
+	G4Tubs *solidDetector = new G4Tubs("solidDetector", 0., 0.15*m, 0.1*m,0., 2 * pi);
 
 	logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
 
 	G4VPhysicalVolume *physDetector = new 
 	G4PVPlacement(rotation, //se aplica misma rotacion que el estanque 
-		G4ThreeVector(0,1.2*m,0), logicDetector,"physDetector",logicWorld, false, 0, true);
+		G4ThreeVector(0,1.1*m,0), logicDetector,"physDetector",logicWorld, false, 0, true);
 		//
 	//
 
