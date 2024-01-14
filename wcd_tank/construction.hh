@@ -11,6 +11,9 @@
 #include "G4SystemOfUnits.hh"
 #include "G4OpticalSurface.hh"
 #include "G4LogicalBorderSurface.hh"
+#include "G4PhysicalConstants.hh"
+#include "G4ProductionCuts.hh"
+
 
 
 #include "detector.hh"

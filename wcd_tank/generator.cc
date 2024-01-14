@@ -15,13 +15,13 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
 //-----------------------------------------------
 //-------Definiendo partícula (muón)
 	G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
-	G4String particleName = "mu+";
+	G4String particleName = "gamma";
 	G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
 //-----------------------------------------------
 // DEfiniedo parámetros de lazamiento
 	G4double x1 = 0 *m;
-	G4double y1 = 3.*m;
-	G4double z1 = 6.*G4UniformRand()*m-3*m;
+	G4double y1 = 1.*m;
+	G4double z1 = 3.*G4UniformRand()*m-3*m;
 
 	G4double x2 = 0 *m;
 	G4double y2 = 1.2*m;
@@ -36,7 +36,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
 
 	fParticleGun->SetParticlePosition(pos);
 	fParticleGun->SetParticleMomentumDirection(mom);
-	fParticleGun->SetParticleMomentum(1*GeV);
+	fParticleGun->SetParticleMomentum(200*MeV);
 	fParticleGun->SetParticleDefinition(particle);
 
 	fParticleGun->GeneratePrimaryVertex(anEvent);
