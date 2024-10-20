@@ -44,4 +44,8 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
     //man->FillNtupleDColumn(5, photonEnergy);    // Nueva columna para la energía de los fotones
    
 	man->AddNtupleRow(0);
+	
+	// Añadir la declaración de retorno para cumplir con el tipo de retorno
+    return true;  // o false si decides que el hit no fue procesado exitosamente
+
 }
