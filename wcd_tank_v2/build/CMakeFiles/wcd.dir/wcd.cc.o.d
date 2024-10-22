@@ -779,8 +779,16 @@ CMakeFiles/wcd.dir/wcd.cc.o: \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VUserActionInitialization.hh \
  /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/generator.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleGun.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GeneralParticleSource.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SingleParticleSource.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VPrimaryGenerator.hh \
- /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleTable.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SPSPosDistribution.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SPSRandomGenerator.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4DataInterpolation.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SPSAngDistribution.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4SPSEneDistribution.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4GeneralParticleSourceData.hh \
+ /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4ParticleGun.hh \
  /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/run.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4UserRunAction.hh

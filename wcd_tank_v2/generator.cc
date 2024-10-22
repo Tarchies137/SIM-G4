@@ -3,6 +3,10 @@
 #include "G4GeneralParticleSource.hh"
 #include "G4ParticleGun.hh"
 #include "G4ParticleTable.hh"
+#include "Randomize.hh"  // Para G4UniformRand()
+#include "CLHEP/Units/SystemOfUnits.h"  // Incluir las unidades de CLHEP
+
+using namespace CLHEP;  // Usar el espacio de nombres para las unidades
 
 MyPrimaryGenerator::MyPrimaryGenerator(bool useGPSOption)
     : useGPS(useGPSOption)

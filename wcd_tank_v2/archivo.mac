@@ -1,26 +1,26 @@
 # Inicializa la simulación
 /run/initialize
 
-# Configuración de la fuente de partículas usando GPS
-
-# Tipo de partícula: puedes cambiar "mu+" a otra partícula como "gamma", "e-", "proton", etc.
+# Configuración de la fuente de partículas
 /gps/particle mu+
-
-# Energía de la partícula: 1 GeV
 /gps/energy 1 GeV
+/gps/position 0 0 0 m
+/gps/direction 1 0 0
 
-# Posición de la fuente: Coloca la fuente de partículas en el punto (0, 3, 0) metros
-/gps/position 0 3 0 m
+# Configuración de la visualización
+/vis/open OGL    # Abre la visualización en OpenGL
+/vis/viewer/set/viewpointVector 1 1 1  # Ajusta la perspectiva de la cámara
+/vis/drawVolume   # Dibuja el volumen del detector
+/vis/scene/add/trajectories smooth  # Añade las trayectorias de las partículas
+/vis/scene/endOfEventAction accumulate  # Acumula la visualización para cada evento
+/vis/viewer/set/autoRefresh true  # Refresca automáticamente después de cada evento
 
-# Dirección de la partícula: Hacia abajo en el eje Y negativo
-/gps/direction 0 -1 0
+# Generar 10 eventos
+/run/beamOn 10
 
-# Configuración de la emisión desde una superficie circular de 1 metro de radio
-/gps/pos/type Circle
-/gps/pos/radius 1 m
+# Mantener la visualización abierta al final de la simulación
+/vis/viewer/set/autoRefresh false
+/vis/scene/endOfRunAction keepCurrent
 
-# Distribución angular: isotrópica en todas las direcciones
-/gps/ang/type iso
-
-# Generar 1000 eventos
-/run/beamOn 1000
+# Pausar la simulación para observar el resultado, sin terminarla abruptamente
+/control/pause
