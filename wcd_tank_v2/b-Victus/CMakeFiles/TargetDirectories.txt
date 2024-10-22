@@ -1,0 +1,4 @@
+/home/tarchies/fabian/Magister/SIMULACIONES/GEANT4/SIM-G4/wcd_tank/b-Victus/CMakeFiles/wcd.dir
+/home/tarchies/fabian/Magister/SIMULACIONES/GEANT4/SIM-G4/wcd_tank/b-Victus/CMakeFiles/Estanque.dir
+/home/tarchies/fabian/Magister/SIMULACIONES/GEANT4/SIM-G4/wcd_tank/b-Victus/CMakeFiles/edit_cache.dir
+/home/tarchies/fabian/Magister/SIMULACIONES/GEANT4/SIM-G4/wcd_tank/b-Victus/CMakeFiles/rebuild_cache.dir

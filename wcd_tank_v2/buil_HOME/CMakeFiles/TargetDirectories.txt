@@ -1,0 +1,4 @@
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles/wcd.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles/Estanque.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles/edit_cache.dir
+/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank/buil_HOME/CMakeFiles/rebuild_cache.dir

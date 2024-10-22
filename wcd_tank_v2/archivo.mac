@@ -1,0 +1,11 @@
+# Inicializa el run manager
+/run/initialize
+
+# Configurar la fuente de partículas
+/gps/particle gamma          # Define que la partícula generada es un fotón (gamma)
+/gps/energy 1 GeV            # Define la energía de la partícula en 1 GeV
+/gps/position 0 0 0 m        # Define la posición inicial de la fuente de partículas
+/gps/direction 1 0 0         # Define la dirección de las partículas (a lo largo del eje X)
+
+# Ejecuta la simulación con un número de eventos
+/run/beamOn 1000             # Ejecuta 1000 eventos
