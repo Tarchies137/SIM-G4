@@ -1,11 +1,26 @@
-# Inicializa el run manager
+# Inicializa la simulación
 /run/initialize
 
-# Configurar la fuente de partículas
-/gps/particle gamma          # Define que la partícula generada es un fotón (gamma)
-/gps/energy 1 GeV            # Define la energía de la partícula en 1 GeV
-/gps/position 0 0 0 m        # Define la posición inicial de la fuente de partículas
-/gps/direction 1 0 0         # Define la dirección de las partículas (a lo largo del eje X)
+# Configuración de la fuente de partículas usando GPS
 
-# Ejecuta la simulación con un número de eventos
-/run/beamOn 1000             # Ejecuta 1000 eventos
+# Tipo de partícula: puedes cambiar "mu+" a otra partícula como "gamma", "e-", "proton", etc.
+/gps/particle mu+
+
+# Energía de la partícula: 1 GeV
+/gps/energy 1 GeV
+
+# Posición de la fuente: Coloca la fuente de partículas en el punto (0, 3, 0) metros
+/gps/position 0 3 0 m
+
+# Dirección de la partícula: Hacia abajo en el eje Y negativo
+/gps/direction 0 -1 0
+
+# Configuración de la emisión desde una superficie circular de 1 metro de radio
+/gps/pos/type Circle
+/gps/pos/radius 1 m
+
+# Distribución angular: isotrópica en todas las direcciones
+/gps/ang/type iso
+
+# Generar 1000 eventos
+/run/beamOn 1000

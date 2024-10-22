@@ -9,6 +9,7 @@
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
+#include "generator.hh"
 
 int main(int argc, char ** argv)
 {
@@ -18,10 +19,14 @@ int main(int argc, char ** argv)
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInicialization());
 
+    // Aquí decidimos si usar GPS o ParticleGun en función de los argumentos
+    bool useGPS = (argc == 2);  // Usar GPS si se pasa un archivo .mac
+    runManager->SetUserAction(new MyPrimaryGenerator(useGPS));
+
     runManager->Initialize();
 
     G4UIExecutive* ui = nullptr;
-    if (argc == 1) {  // Creación de la interfaz interactiva solo si no hay archivo .mac
+    if (argc == 1) {
         ui = new G4UIExecutive(argc, argv);
     }
 
@@ -30,9 +35,8 @@ int main(int argc, char ** argv)
 
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
-    // Cargar archivo .mac si se proporciona como argumento
     if (argc == 2) {
-        // Ejecuta el archivo .mac
+        // Cargar archivo .mac si se proporciona como argumento
         G4String command = "/control/execute ";
         G4String fileName = argv[1];
         UImanager->ApplyCommand(command + fileName);
@@ -41,7 +45,7 @@ int main(int argc, char ** argv)
         UImanager->ApplyCommand("/vis/open OGL");
         UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 0 0");
         UImanager->ApplyCommand("/vis/drawVolume");
-        UImanager->ApplyCommand("vis/viewer/set/autoRefresh true");
+        UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
         UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
         UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 

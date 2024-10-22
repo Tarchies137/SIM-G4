@@ -1,43 +1,61 @@
 #include "generator.hh"
-#include "Randomize.hh"
+#include "G4Event.hh"
+#include "G4GeneralParticleSource.hh"
+#include "G4ParticleGun.hh"
+#include "G4ParticleTable.hh"
 
-MyPrimaryGenerator::MyPrimaryGenerator()
+MyPrimaryGenerator::MyPrimaryGenerator(bool useGPSOption)
+    : useGPS(useGPSOption)
 {
-	fParticleGun = new G4ParticleGun(1);
+    if (useGPS) {
+        // Si se usa el GPS
+        fParticleSource = new G4GeneralParticleSource();
+    } else {
+        // Si se usa el ParticleGun
+        fParticleGun = new G4ParticleGun(1);
+    }
 }
+
 MyPrimaryGenerator::~MyPrimaryGenerator()
 {
-	delete fParticleGun;
+    if (useGPS) {
+        delete fParticleSource;
+    } else {
+        delete fParticleGun;
+    }
 }
 
 void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
 {
-//-----------------------------------------------
-//-------Definiendo partícula (muón)
-	G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
-	G4String particleName = "mu+";
-	G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
-//-----------------------------------------------
-// DEfiniedo parámetros de lazamiento
-	G4double x1 = 0 *m;
-	G4double y1 = 3.*m;
-	G4double z1 = 3.*G4UniformRand()*m-3*m;
+    if (useGPS) {
+        // Usar GPS si está activado
+        fParticleSource->GeneratePrimaryVertex(anEvent);
+    } else {
+        // Si no, usar ParticleGun (como en tu código original)
+        G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
+        G4String particleName = "mu+";
+        G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
 
-	G4double x2 = 0 *m;
-	G4double y2 = 1.2*m;
-	G4double z2 = 2.4*G4UniformRand()*m-1.2*m;
+        G4double x1 = 0 *m;
+        G4double y1 = 3.*m;
+        G4double z1 = 3.*G4UniformRand()*m - 3*m;
 
-	G4double x = x2-x1 ;
-	G4double y = y2-y1;
-	G4double z = z2-z1;
+        G4double x2 = 0 *m;
+        G4double y2 = 1.2*m;
+        G4double z2 = 2.4*G4UniformRand()*m - 1.2*m;
 
-	G4ThreeVector pos(x1,y1,z1);
-	G4ThreeVector mom(x,y,z);
+        G4double x = x2 - x1;
+        G4double y = y2 - y1;
+        G4double z = z2 - z1;
 
-	fParticleGun->SetParticlePosition(pos);
-	fParticleGun->SetParticleMomentumDirection(mom);
-	fParticleGun->SetParticleMomentum(1000*MeV);
-	fParticleGun->SetParticleDefinition(particle);
+        G4ThreeVector pos(x1, y1, z1);
+        G4ThreeVector mom(x, y, z);
 
-	fParticleGun->GeneratePrimaryVertex(anEvent);
+        fParticleGun->SetParticlePosition(pos);
+        fParticleGun->SetParticleMomentumDirection(mom);
+        fParticleGun->SetParticleMomentum(1000 * MeV);
+        fParticleGun->SetParticleDefinition(particle);
+
+        fParticleGun->GeneratePrimaryVertex(anEvent);
+    }
 }
