@@ -16,7 +16,7 @@
 
 
 
-#include "detector.hh"
+#include "MySensitiveDetector.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {

@@ -6,11 +6,11 @@
 #include "generator.hh"
 #include "run.hh"
 
-class MyActionInicialization : public G4VUserActionInitialization
+class MyActionInitialization : public G4VUserActionInitialization
 {
 public:
-	MyActionInicialization();
-	~MyActionInicialization();
+	MyActionInitialization();
+	~MyActionInitialization();
 
 	virtual void Build() const;
 	

@@ -1,16 +1,24 @@
 #include "action.hh"
 
-MyActionInicialization::MyActionInicialization()
+#include "event.hh" // Incluir el archivo de cabecera del EventAction
+
+MyActionInitialization::MyActionInitialization()
 {}
 
-MyActionInicialization::~MyActionInicialization()
+MyActionInitialization::~MyActionInitialization()
 {}
-
-void MyActionInicialization::Build() const
+void MyActionInitialization::Build() const
 {
-	MyPrimaryGenerator *generator = new MyPrimaryGenerator(true);
-	SetUserAction(generator);
+    MyPrimaryGenerator *generator = new MyPrimaryGenerator(true);
+    SetUserAction(generator);
 
-	MyRunAction *runAction = new MyRunAction();
-	SetUserAction(runAction);
+    MyRunAction *runAction = new MyRunAction();
+    SetUserAction(runAction);
+
+    // Crear una instancia del detector sensible
+    auto *sensitiveDetector = new MySensitiveDetector("SensitiveDetector");
+
+    // Crear el MyEventAction con el detector sensible
+    MyEventAction *eventAction = new MyEventAction(sensitiveDetector);
+    SetUserAction(eventAction);
 }

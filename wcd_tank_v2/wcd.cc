@@ -17,7 +17,7 @@ int main(int argc, char ** argv)
 
     runManager->SetUserInitialization(new MyDetectorConstruction());
     runManager->SetUserInitialization(new MyPhysicsList());
-    runManager->SetUserInitialization(new MyActionInicialization());
+    runManager->SetUserInitialization(new MyActionInitialization());
 
     // Aquí decidimos si usar GPS o ParticleGun en función de los argumentos
     bool useGPS = (argc == 2);  // Usar GPS si se pasa un archivo .mac
