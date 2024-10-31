@@ -12,6 +12,7 @@ void MyRunAction::BeginOfRunAction(const G4Run*)
 
 	G4String filename = "output.root";
 	man->OpenFile(filename);
+G4cout << "Opening file: output.root" << G4endl;
 
 	man->CreateNtuple("Hits", "Hits");
 	man->CreateNtupleIColumn("fEvent");
@@ -29,4 +30,6 @@ void MyRunAction::EndOfRunAction(const G4Run*)
 
 	man->Write();
 	man->CloseFile();
+	G4cout << "Closing file: output.root" << G4endl;
+
 } 
