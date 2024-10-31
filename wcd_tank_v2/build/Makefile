@@ -142,6 +142,30 @@ Estanque/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Estanque.dir/build.make CMakeFiles/Estanque.dir/build
 .PHONY : Estanque/fast
 
+MySensitiveDetector.o: MySensitiveDetector.cc.o
+.PHONY : MySensitiveDetector.o
+
+# target to build an object file
+MySensitiveDetector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/MySensitiveDetector.cc.o
+.PHONY : MySensitiveDetector.cc.o
+
+MySensitiveDetector.i: MySensitiveDetector.cc.i
+.PHONY : MySensitiveDetector.i
+
+# target to preprocess a source file
+MySensitiveDetector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/MySensitiveDetector.cc.i
+.PHONY : MySensitiveDetector.cc.i
+
+MySensitiveDetector.s: MySensitiveDetector.cc.s
+.PHONY : MySensitiveDetector.s
+
+# target to generate assembly for a file
+MySensitiveDetector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/MySensitiveDetector.cc.s
+.PHONY : MySensitiveDetector.cc.s
+
 action.o: action.cc.o
 .PHONY : action.o
 
@@ -190,29 +214,29 @@ construction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/construction.cc.s
 .PHONY : construction.cc.s
 
-detector.o: detector.cc.o
-.PHONY : detector.o
+event.o: event.cc.o
+.PHONY : event.o
 
 # target to build an object file
-detector.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.o
-.PHONY : detector.cc.o
+event.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/event.cc.o
+.PHONY : event.cc.o
 
-detector.i: detector.cc.i
-.PHONY : detector.i
+event.i: event.cc.i
+.PHONY : event.i
 
 # target to preprocess a source file
-detector.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.i
-.PHONY : detector.cc.i
+event.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/event.cc.i
+.PHONY : event.cc.i
 
-detector.s: detector.cc.s
-.PHONY : detector.s
+event.s: event.cc.s
+.PHONY : event.s
 
 # target to generate assembly for a file
-detector.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/detector.cc.s
-.PHONY : detector.cc.s
+event.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/event.cc.s
+.PHONY : event.cc.s
 
 generator.o: generator.cc.o
 .PHONY : generator.o
@@ -320,15 +344,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Estanque"
 	@echo "... wcd"
+	@echo "... MySensitiveDetector.o"
+	@echo "... MySensitiveDetector.i"
+	@echo "... MySensitiveDetector.s"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"
 	@echo "... construction.o"
 	@echo "... construction.i"
 	@echo "... construction.s"
-	@echo "... detector.o"
-	@echo "... detector.i"
-	@echo "... detector.s"
+	@echo "... event.o"
+	@echo "... event.i"
+	@echo "... event.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"

@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/MySensitiveDetector.cc" "CMakeFiles/wcd.dir/MySensitiveDetector.cc.o" "gcc" "CMakeFiles/wcd.dir/MySensitiveDetector.cc.o.d"
   "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/action.cc" "CMakeFiles/wcd.dir/action.cc.o" "gcc" "CMakeFiles/wcd.dir/action.cc.o.d"
   "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/construction.cc" "CMakeFiles/wcd.dir/construction.cc.o" "gcc" "CMakeFiles/wcd.dir/construction.cc.o.d"
-  "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/detector.cc" "CMakeFiles/wcd.dir/detector.cc.o" "gcc" "CMakeFiles/wcd.dir/detector.cc.o.d"
+  "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/event.cc" "CMakeFiles/wcd.dir/event.cc.o" "gcc" "CMakeFiles/wcd.dir/event.cc.o.d"
   "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/generator.cc" "CMakeFiles/wcd.dir/generator.cc.o" "gcc" "CMakeFiles/wcd.dir/generator.cc.o.d"
   "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/physics.cc" "CMakeFiles/wcd.dir/physics.cc.o" "gcc" "CMakeFiles/wcd.dir/physics.cc.o.d"
   "/home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/run.cc" "CMakeFiles/wcd.dir/run.cc.o" "gcc" "CMakeFiles/wcd.dir/run.cc.o.d"

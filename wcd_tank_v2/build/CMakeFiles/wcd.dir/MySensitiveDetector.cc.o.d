@@ -1,5 +1,5 @@
-CMakeFiles/wcd.dir/detector.cc.o: \
- /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/detector.cc \
+CMakeFiles/wcd.dir/MySensitiveDetector.cc.o: \
+ /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/MySensitiveDetector.cc \
  /usr/include/stdc-predef.h \
  /home/fabian/fabian/Simuladores/Geant4/SIM-G4/wcd_tank_v2/MySensitiveDetector.hh \
  /home/fabian/fabian/Simuladores/Geant4/geant4-v11.1.2-install/include/Geant4/G4VSensitiveDetector.hh \
