@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/wcd.dir/MySensitiveDetector.cc.o"
   "CMakeFiles/wcd.dir/MySensitiveDetector.cc.o.d"
+  "CMakeFiles/wcd.dir/SteppingAction.cc.o"
+  "CMakeFiles/wcd.dir/SteppingAction.cc.o.d"
   "CMakeFiles/wcd.dir/action.cc.o"
   "CMakeFiles/wcd.dir/action.cc.o.d"
   "CMakeFiles/wcd.dir/construction.cc.o"

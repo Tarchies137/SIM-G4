@@ -166,6 +166,30 @@ MySensitiveDetector.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/MySensitiveDetector.cc.s
 .PHONY : MySensitiveDetector.cc.s
 
+SteppingAction.o: SteppingAction.cc.o
+.PHONY : SteppingAction.o
+
+# target to build an object file
+SteppingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/SteppingAction.cc.o
+.PHONY : SteppingAction.cc.o
+
+SteppingAction.i: SteppingAction.cc.i
+.PHONY : SteppingAction.i
+
+# target to preprocess a source file
+SteppingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/SteppingAction.cc.i
+.PHONY : SteppingAction.cc.i
+
+SteppingAction.s: SteppingAction.cc.s
+.PHONY : SteppingAction.s
+
+# target to generate assembly for a file
+SteppingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wcd.dir/build.make CMakeFiles/wcd.dir/SteppingAction.cc.s
+.PHONY : SteppingAction.cc.s
+
 action.o: action.cc.o
 .PHONY : action.o
 
@@ -347,6 +371,9 @@ help:
 	@echo "... MySensitiveDetector.o"
 	@echo "... MySensitiveDetector.i"
 	@echo "... MySensitiveDetector.s"
+	@echo "... SteppingAction.o"
+	@echo "... SteppingAction.i"
+	@echo "... SteppingAction.s"
 	@echo "... action.o"
 	@echo "... action.i"
 	@echo "... action.s"
