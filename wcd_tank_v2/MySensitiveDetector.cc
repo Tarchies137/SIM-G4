@@ -1,7 +1,9 @@
 #include "MySensitiveDetector.hh"
 #include "G4Step.hh"
 #include "G4Track.hh"
+#include "G4OpticalPhoton.hh"
 #include "G4ParticleDefinition.hh"
+#include "G4VProcess.hh" 
 
 // Constructor
 MySensitiveDetector::MySensitiveDetector(const G4String& name)
@@ -17,9 +19,24 @@ void MySensitiveDetector::Initialize(G4HCofThisEvent*) {
 }
 
 // Procesar los hits y contar los fotones
-G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* /*hist*/) {
-    if (step->GetTrack()->GetDefinition()->GetParticleName() == "opticalphoton") {
-        numPhotons++;  // Incrementar el contador de fotones
+G4bool MySensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*) {
+    // Verificamos si el paso corresponde a un fotón óptico
+    if (step->GetTrack()->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition()) {
+        // Verificamos que el proceso creador sea Cherenkov
+        const G4VProcess* creatorProcess = step->GetTrack()->GetCreatorProcess();
+        if (creatorProcess && creatorProcess->GetProcessName() == "Cerenkov") {
+             numPhotons++;
+            // Verificar que el fotón esté en el volumen del PMT
+            G4VPhysicalVolume* volume = step->GetPreStepPoint()->GetPhysicalVolume();
+            if (volume) {
+                G4cout << "Fotón en volumen: " << volume->GetName() << G4endl; // Imprime el nombre del volumen actual
+            }
+                
+           /* if (volume && volume->GetName() == "physDetector") { // Verificar el nombre correcto del volumen
+                numPhotons++; // Incrementar el contador
+                G4cout << "Fotón Cherenkov detectado en el PMT" << G4endl;
+            }*/
+        }
     }
     return true;
 }

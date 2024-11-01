@@ -92,8 +92,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
     // Detector: Tubo cilíndrico dentro del estanque para detectar fotones
     G4Tubs *solidDetector = new G4Tubs("solidDetector", 0., 0.15*m, 0.1*m, 0., 2 * CLHEP::pi);
-    logicDetector = new G4LogicalVolume(solidDetector, nist->FindOrBuildMaterial("G4_WATER"), "logicDetector");
-    G4VPhysicalVolume *physDetector = new G4PVPlacement(rotation, G4ThreeVector(0, 0.9*m, 0), logicDetector, "physDetector", logicWorld, false, 0, true);
+    logicDetector = new G4LogicalVolume(solidDetector,tankMat, "logicDetector");
+    G4VPhysicalVolume *physDetector = new G4PVPlacement(rotation,G4ThreeVector(0, 0, 0), logicDetector, "physDetector", logicWorld, false, 0, true);
 
     // Capa de Tyvek: Envuelve el estanque para reflexión
     G4Tubs *solidTyvek = new G4Tubs("solidTyvek", 1.2*m, 1.2*m + 0.01*mm, 1.2*m, 0., 2 * CLHEP::pi);

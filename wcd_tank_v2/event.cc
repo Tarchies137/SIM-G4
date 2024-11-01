@@ -4,16 +4,19 @@
 #include "G4Event.hh"
 #include "G4ThreeVector.hh"
 #include "G4SystemOfUnits.hh"
+#include "SteppingAction.hh"
+#include "MySensitiveDetector.hh"
 
 // Constructor
-MyEventAction::MyEventAction(MySensitiveDetector* sensDet)
-    : fSensitiveDetector(sensDet)
-{}
-
+MyEventAction::MyEventAction(MySensitiveDetector* sensDet, SteppingAction* steppingAction)
+    : fSensitiveDetector(sensDet), fSteppingAction(steppingAction) {}
 // Destructor
 MyEventAction::~MyEventAction()
 {}
 
+void MyEventAction::BeginOfEventAction(const G4Event*) {
+    fSteppingAction->ResetPhotonCount();
+}
 void MyEventAction::EndOfEventAction(const G4Event* event)
 {
     // Obtener el AnalysisManager
@@ -37,13 +40,16 @@ void MyEventAction::EndOfEventAction(const G4Event* event)
     // Obtener el número real de fotones detectados desde MySensitiveDetector
     G4int numPhotons = fSensitiveDetector->GetNumPhotons();
     G4double photonEnergy = 2.0 * MeV; // Ejemplo: Energía de los fotones en MeV
+        // Obtener el número de fotones generados desde SteppingAction
+    G4int numPhotonsGenerated = fSteppingAction->GetPhotonCount();
+
 
     // Llenar las columnas de la ntupla con los datos obtenidos
     man->FillNtupleIColumn(0, fEvent);
     man->FillNtupleDColumn(1, fX);
     man->FillNtupleDColumn(2, fY);
     man->FillNtupleDColumn(3, fZ);
-    man->FillNtupleIColumn(4, numPhotons);
+    man->FillNtupleIColumn(4, numPhotonsGenerated);
     man->FillNtupleDColumn(5, photonEnergy);
 
     // Añadir la fila de datos
