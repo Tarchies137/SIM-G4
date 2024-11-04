@@ -37,16 +37,16 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
     } else {
         // Si no, usar ParticleGun (como en tu código original)
         G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
-        G4String particleName = "mu+";
+        G4String particleName = "mu-";
         G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
 
         G4double x1 = 0 *m;
         G4double y1 = 3.*m;
-        G4double z1 = 3.*G4UniformRand()*m - 3*m;
+        G4double z1 = 0;//3.*G4UniformRand()*m - 3*m;
 
         G4double x2 = 0 *m;
         G4double y2 = 1.2*m;
-        G4double z2 = 2.4*G4UniformRand()*m - 1.2*m;
+        G4double z2 = 0;//2.4*G4UniformRand()*m - 1.2*m;
 
         G4double x = x2 - x1;
         G4double y = y2 - y1;
@@ -57,7 +57,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent)
 
         fParticleGun->SetParticlePosition(pos);
         fParticleGun->SetParticleMomentumDirection(mom);
-        fParticleGun->SetParticleMomentum(1000 * MeV);
+        fParticleGun->SetParticleMomentum(pow(10, 2 + 4 * G4UniformRand()) * MeV);
         fParticleGun->SetParticleDefinition(particle);
 
         fParticleGun->GeneratePrimaryVertex(anEvent);

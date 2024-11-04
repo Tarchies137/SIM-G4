@@ -29,6 +29,8 @@ public:
 private:
 	G4LogicalVolume *logicDetector;
 	virtual void ConstructSDandField();
+    MySensitiveDetector* mySensitiveDetector;
+
 };
 
 #endif

@@ -17,10 +17,10 @@ public:
     virtual void EndOfEvent(G4HCofThisEvent*) override;
 
     // Nuevo método para obtener el número de fotones detectados
-    G4int GetNumPhotons() const;
+    G4int GetNumPhotonsPMT() const;
 
 private:
-    G4int numPhotons;  // Contador para los fotones detectados
+    G4int NPhotonPMT;  // Contador para los fotones detectados
 };
 
 #endif

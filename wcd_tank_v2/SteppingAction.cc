@@ -30,7 +30,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step) {
         const G4VProcess* creatorProcess = step->GetTrack()->GetCreatorProcess();
         if (creatorProcess && creatorProcess->GetProcessName() == "Cerenkov") {
             numPhotonsGenerated++; // Incrementa el contador
-            G4cout << "Fotón Cherenkov generado" << G4endl; // Mensaje de depuración
+            //G4cout << "Fotón Cherenkov generado" << G4endl; // Mensaje de depuración
         }
     }
 }
